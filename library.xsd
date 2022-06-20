@@ -1,0 +1,344 @@
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:lib="https://www.ana-escobar.com/library/"
+            targetNamespace="https://www.ana-escobar.com/library/"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
+<xs:element name="library" type="lib:libraryType">
+
+    <!-- Keys and KeyRefs are declared at the root -->
+    <xs:key name="bookKey">
+        <xs:selector xpath="lib:book"/>
+        <xs:field    xpath="@id"/>                           
+    </xs:key>
+
+    <xs:keyref  name="bookKeyrefRes" 
+                refer="lib:bookKey">
+        <xs:selector xpath="lib:reservation/lib:resBook"/>
+        <xs:field    xpath="@bookId"/>                           
+    </xs:keyref>
+
+    <xs:keyref  name="bookKeyrefMember" 
+                refer="lib:bookKey">
+        <xs:selector xpath="lib:member/lib:borrowedBooks/lib:borrowedBook"/>
+        <xs:field    xpath="@bookId"/>                           
+    </xs:keyref>
+
+    <xs:key     name="memberKey">
+        <xs:selector xpath="lib:member"/>
+        <xs:field    xpath="@id"/>                           
+    </xs:key>
+
+    <xs:keyref  name="memberKeyrefRes" 
+                refer="lib:memberKey">
+        <xs:selector xpath="lib:reservation/lib:resMember"/>
+        <xs:field    xpath="@memberId"/>                           
+    </xs:keyref>
+
+    <xs:key     name="librarianKey">
+        <xs:selector xpath="lib:librarian"/>
+        <xs:field    xpath="@id"/>                           
+    </xs:key>
+
+    <xs:keyref  name="librarianKeyref" 
+                refer="lib:librarianKey">
+        <xs:selector xpath="lib:member/lib:borrowedBooks/lib:borrowedBook"/>
+        <xs:field    xpath="@librarianId"/>                           
+    </xs:keyref>
+
+    <xs:key     name="authorKey">
+        <xs:selector xpath="lib:author"/>
+        <xs:field    xpath="@id"/>                           
+    </xs:key>
+
+    <xs:keyref  name="authorKeyKeyref" 
+                refer="lib:authorKey">
+        <xs:selector xpath="lib:book/lib:authors/lib:bookauthor"/>
+        <xs:field    xpath="@authorId"/>                           
+    </xs:keyref>
+    
+</xs:element>
+
+<xs:element name='book'         type='lib:bookType'/>
+<xs:element name='author'       type='lib:authorType'/>
+<xs:element name='member'       type='lib:memberType'/>  <!-- A library can have no members, there's people that just go to the library to study, read, ... without needing to be members -->
+<xs:element name='librarian'    type='lib:librarianType'/>
+<xs:element name='reservation'  type='lib:reservationType'/>
+
+<xs:complexType name="libraryType">
+    <xs:sequence>
+        <xs:element ref='lib:book'          minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref='lib:author'        minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref='lib:member'        minOccurs="0" maxOccurs="unbounded"/>  <!-- A library can have no members, there's people that just go to the library to study, read, ... without needing to be members -->
+        <xs:element ref='lib:librarian'     minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref='lib:reservation'   minOccurs="0" maxOccurs="unbounded"/>  <!-- There can be no reservations -->
+    </xs:sequence>
+</xs:complexType>
+
+<!-- BOOK -->
+<xs:element name='kinds'            type='lib:kindsType'/>
+<xs:element name='title'            type='xs:string'/>
+<xs:element name='authors'          type='lib:authorsType'/>
+<xs:element name='editorial'        type='xs:string'/>
+<xs:element name='type'             type='lib:typeType'/>
+<xs:element name='isbn'             type='lib:isbnType'/>
+<xs:element name='publicationYear'  type='lib:yearType'/>
+<xs:element name='edition'          type='xs:integer'/>
+<xs:element name='abstract'         type='xs:string'/>
+<xs:element name='nbOfCopies'       type='xs:integer'/>
+<xs:element name='availability'     type='xs:integer'/>
+<xs:element name='languages'        type='lib:languagesType'/>
+
+<xs:complexType name="bookType">
+    <xs:sequence>
+        <xs:element ref='lib:kinds'/>           <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:title'/>           <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:authors'/>         <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:editorial'/>       <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:type'/>            <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:isbn'/>            <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:publicationYear'/> <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:edition'         minOccurs="0" maxOccurs="1"/>
+        <xs:element ref='lib:abstract'        minOccurs="0" maxOccurs="1"/>
+        <xs:element ref='lib:nbOfCopies'/>      <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:availability'/>    <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:languages'/>       <!-- By default minOccurs and maxOccurs value is 1 -->
+    </xs:sequence>
+    <xs:attribute name='id' type='xs:string' use='required'/>
+</xs:complexType>
+
+<xs:element name='kind' type='lib:kindType'/>
+
+<xs:complexType name="kindsType">
+    <xs:sequence>
+        <xs:element ref='lib:kind' minOccurs="1" maxOccurs="3"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="kindType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="adults"/>
+        <xs:enumeration value="kids"/>
+        <xs:enumeration value="comic"/>
+        <xs:enumeration value="magazine"/>
+        <xs:enumeration value="art"/>
+        <xs:enumeration value="history"/>
+        <xs:enumeration value="science"/>
+        <xs:enumeration value="scifi"/>
+        <xs:enumeration value="politics"/>
+        <xs:enumeration value="nature"/>
+        <xs:enumeration value="buisiness"/>
+        <xs:enumeration value="travel"/>
+        <xs:enumeration value="cooking"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name='bookauthor'>
+    <xs:complexType>
+        <xs:attribute name='authorId' type='xs:string' use='required'/>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name="authorsType">
+    <xs:sequence>
+        <xs:element ref='lib:bookauthor' minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="typeType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="borrow"/>
+        <xs:enumeration value="consult"/>
+        <xs:enumeration value="all"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Pattern for ISBN 10. -->
+<xs:simpleType name="isbnType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{10}|[0-9]{9}X?"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- Years from 1000 to 2999 -->
+<xs:simpleType name="yearType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name='language'>
+    <xs:complexType>
+        <xs:attribute name='lang' use='required'>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="spanish"/>
+                    <xs:enumeration value="english"/>
+                    <xs:enumeration value="french"/>
+                    <xs:enumeration value="german"/>
+                    <xs:enumeration value="portuguese"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name="languagesType">
+    <xs:sequence>
+        <xs:element ref='lib:language' minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- AUTHOR -->
+<xs:element name='authorFirstName'  type='lib:onlyCharsType'/>
+<xs:element name='authorLastName'   type='lib:onlyCharsType'/>
+
+<xs:complexType name="authorType">
+    <xs:sequence>
+        <xs:element ref='lib:authorFirstName'/>
+        <xs:element ref='lib:authorLastName'/>
+    </xs:sequence>
+    <xs:attribute name='id' type='xs:string' use='required'/>
+</xs:complexType>
+
+<!-- MEMBER -->
+<xs:element name='memberFirstName'  type='lib:onlyCharsType'/>
+<xs:element name='memberLastName'   type='lib:onlyCharsType'/>
+<xs:element name='birthDate'        type='lib:formattedDateType'/>
+<xs:element name='email'            type='lib:emailType'/>
+<xs:element name='address'          type='lib:addressType'/>
+<xs:element name='joinedDate'       type='lib:formattedDateType'/>
+<xs:element name='interests'>
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name='interest' type='lib:kindType' minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name='borrowedBooks'    type='lib:borrowedBooksType'/>
+<xs:element name='memberStatus'     type='lib:memberStatusType'/>
+
+<xs:complexType name="memberType">
+    <xs:sequence>
+        <xs:element ref='lib:memberFirstName'/>     <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:memberLastName'/>      <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:birthDate'/>           <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:email'/>               <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:address'/>             <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:joinedDate'/>          <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:interests'/>           <!-- By default minOccurs and maxOccurs value is 1 -->          
+        <xs:element ref='lib:borrowedBooks'/>       <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:memberStatus'/>        <!-- By default minOccurs and maxOccurs value is 1 -->
+    </xs:sequence>
+    <xs:attribute name='id' type='xs:string' use='required'/>
+</xs:complexType>
+
+<xs:complexType name="addressType">
+    <xs:sequence>
+        <xs:element name='street'                   type='lib:onlyCharsType'/>  <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element name='number'                   type='xs:integer'/>         <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element name='zipcode'                  type='lib:zipcodeType'/>    <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element name='city'                     type='lib:onlyCharsType'/>  <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element name='additionalInformation'    type='xs:string'            minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- A general zipcode type -->
+<xs:simpleType name="zipcodeType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9a-zA-Z]+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name='borrowedBook'>  <!-- There's no limit on the nb of books a member can borrow -->
+    <xs:complexType>
+        <xs:attribute name='bookId'         type='xs:string'                use='required'/>
+        <xs:attribute name='librarianId'    type='xs:string'                use='required'/>
+        <xs:attribute name='borrowDate'     type='lib:formattedDateType'    use='required'/>
+        <xs:attribute name='returnedDate'   type='lib:formattedDateType'    use='optional'/>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name="borrowedBooksType">
+    <xs:sequence>
+        <xs:element ref='lib:borrowedBook' minOccurs="0" maxOccurs="unbounded"/>  <!-- There's no limit on the nb of books a member can borrow -->
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="memberStatusType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="active"/>
+        <xs:enumeration value="cancelled"/>
+        <xs:enumeration value="suspended"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- LIBRARIAN -->
+<xs:element name='librarianFirstName'   type='lib:onlyCharsType'/>
+<xs:element name='librarianLastName'    type='lib:onlyCharsType'/>
+<xs:element name='workEmail'            type='lib:emailType'/>
+<xs:element name='areaOfExpertise'      type='lib:onlyCharsType'/>
+
+<xs:complexType name="librarianType">
+    <xs:sequence>
+        <xs:element ref='lib:librarianFirstName'/>  <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:librarianLastName'/>   <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:workEmail'/>           <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:areaOfExpertise'/>     <!-- By default minOccurs and maxOccurs value is 1 -->
+    </xs:sequence>
+    <xs:attribute name='id' type='xs:string' use='required'/>
+</xs:complexType>
+
+<!-- RESERVATION -->
+<xs:element name='resMember'>
+    <xs:complexType>
+        <xs:attribute name='memberId'   type='xs:string' use='required'/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name='resBook'>
+    <xs:complexType>
+        <xs:attribute name='bookId'     type='xs:string' use='required'/>
+    </xs:complexType>
+</xs:element>
+<xs:element name='reservationDate'      type='lib:formattedDateType'/>
+<xs:element name='reservationStatus'    type='lib:reservationStatusType'/>
+
+<xs:complexType name="reservationType">
+    <xs:sequence>
+        <xs:element ref='lib:resMember'/>           <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:resBook'/>             <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:reservationDate'/>     <!-- By default minOccurs and maxOccurs value is 1 -->
+        <xs:element ref='lib:reservationStatus'/>   <!-- By default minOccurs and maxOccurs value is 1 -->
+    </xs:sequence>
+    <xs:attribute name='id' type='xs:string' use='required'/>
+</xs:complexType>
+
+<xs:simpleType name="reservationStatusType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="confirmed"/>
+        <xs:enumeration value="pending"/>
+        <xs:enumeration value="cancelled"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="onlyCharsType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[a-zA-Z ]+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="formattedDateType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d{4}-\d{2}-\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+        <xs:maxLength value="100"/>
+        <xs:pattern value="[^@]+@[^\.]+\..+|"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

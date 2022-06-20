@@ -1,0 +1,66 @@
+<members>
+   <member id="m1">
+      <firstname>Ana</firstname>
+      <lastname>Escobar</lastname>
+      <email>ana.escobar-llamazares@edu.dsti.institute</email>
+      <birthdate>1999-03-12</birthdate>
+      <joineddate>2010-05-31</joineddate>
+      <loyalty>premium</loyalty>
+   </member>
+   <member id="m4">
+      <firstname>Hollie</firstname>
+      <lastname>Donnelly</lastname>
+      <email>h.donnelly@hotmail.fr</email>
+      <birthdate>1998-11-23</birthdate>
+      <joineddate>2009-01-10</joineddate>
+      <loyalty>premium</loyalty>
+   </member>
+   <member id="m5">
+      <firstname>India</firstname>
+      <lastname>Grant</lastname>
+      <email>i.grant@hotmail.com</email>
+      <birthdate>2001-06-12</birthdate>
+      <joineddate>2021-02-04</joineddate>
+      <loyalty>basic</loyalty>
+   </member>
+   <member id="m6">
+      <firstname>Mae</firstname>
+      <lastname>Seymour</lastname>
+      <email>m.seymour@gmail.com</email>
+      <birthdate>2000-05-08</birthdate>
+      <joineddate>2015-04-03</joineddate>
+      <loyalty>premium</loyalty>
+   </member>
+   <member id="m7">
+      <firstname>Meghan</firstname>
+      <lastname>Mcdonald</lastname>
+      <email>m.mcdonald93@hotmail.fr</email>
+      <birthdate>1993-04-13</birthdate>
+      <joineddate>2017-10-17</joineddate>
+      <loyalty>basic</loyalty>
+   </member>
+   <member id="m8">
+      <firstname>Theo</firstname>
+      <lastname>Padilla</lastname>
+      <email>theo.p@yahoo.fr</email>
+      <birthdate>1994-07-15</birthdate>
+      <joineddate>2020-05-15</joineddate>
+      <loyalty>basic</loyalty>
+   </member>
+   <member id="m9">
+      <firstname>Victor</firstname>
+      <lastname>Carroll</lastname>
+      <email>victor.carroll@gmail.com</email>
+      <birthdate>1987-06-06</birthdate>
+      <joineddate>2010-04-05</joineddate>
+      <loyalty>premium</loyalty>
+   </member>
+   <member id="m10">
+      <firstname>Bruce</firstname>
+      <lastname>Atherton</lastname>
+      <email>bruceatherton1970@gmail.com</email>
+      <birthdate>1970-09-17</birthdate>
+      <joineddate>2020-01-02</joineddate>
+      <loyalty>basic</loyalty>
+   </member>
+</members>

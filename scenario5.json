@@ -1,0 +1,62 @@
+[
+    {
+        "firstname": "Victor",
+        "lastname": "Carroll",
+        "status": "active",
+        "nbBorrowedBooks": "4"
+    },
+    {
+        "firstname": "Ana",
+        "lastname": "Escobar",
+        "status": "active",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Marcos",
+        "lastname": "Briggs",
+        "status": "cancelled",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Hollie",
+        "lastname": "Donnelly",
+        "status": "active",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Mae",
+        "lastname": "Seymour",
+        "status": "active",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Meghan",
+        "lastname": "Mcdonald",
+        "status": "active",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Theo",
+        "lastname": "Padilla",
+        "status": "active",
+        "nbBorrowedBooks": "2"
+    },
+    {
+        "firstname": "Josie",
+        "lastname": "Howard",
+        "status": "cancelled",
+        "nbBorrowedBooks": "1"
+    },
+    {
+        "firstname": "India",
+        "lastname": "Grant",
+        "status": "active",
+        "nbBorrowedBooks": "1"
+    },
+    {
+        "firstname": "Bruce",
+        "lastname": "Atherton",
+        "status": "active",
+        "nbBorrowedBooks": "0"
+    }
+]

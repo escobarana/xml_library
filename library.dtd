@@ -1,0 +1,80 @@
+<!ELEMENT library ( book+, author+, member*, librarian+, reservation* )>
+<!ELEMENT book ( id, kinds, title, authors, editorial, type, isbn, publicationYear, edition?, abstract?, nbOfCopies, availability, languages )>
+<!ATTLIST book 
+    id ID #REQUIRED>
+<!ELEMENT kinds ( kind+ )> <!-- A book can be of multiple different kinds -->
+<!ELEMENT kind EMPTY>
+<!ATTLIST kind
+    kind ( adults | kids | comic | magazine | art | history | science | scifi | politics | nature | business | travel | cooking ) #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT authors ( author+ )>  <!-- A book can have multiple authors -->
+<!ELEMENT author EMPTY>
+<!ATTLIST author 
+    authorId IDREF #REQUIRED>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT type EMPTY>
+<!ATTLIST type 
+    type ( borrow | consult | all ) #REQUIRED>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT publicationYear (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT abstract (#PCDATA)>
+<!ELEMENT nbOfCopies (#PCDATA)>
+<!ELEMENT availability (#PCDATA)>
+<!ELEMENT languages ( language+ )>  <!-- A book can be written in more than one language (books to learn a new language for example) -->
+<!ELEMENT language EMPTY>
+<!ATTLIST language 
+    lang ( spanish | english | french | german | portuguese ) #REQUIRED>
+<!ELEMENT author ( id, authorFirstName, authorLastName )>
+<!ATTLIST author 
+    id ID #REQUIRED>
+<!ELEMENT authorFirstName (#PCDATA)>
+<!ELEMENT authorLastName (#PCDATA)>
+<!ELEMENT member ( id, memberFirstName, memberLastName, birthDate, email, address, joinedDate, interests?, borrowedBooks, memberStatus )>
+<!ATTLIST member 
+    id ID #REQUIRED>
+<!ELEMENT memberFirstName (#PCDATA)>
+<!ELEMENT memberLastName (#PCDATA)>
+<!ELEMENT birthdate (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address ( street, number, zipcode, city, additionalInformation? )>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT zipcode (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT additionalInformation (#PCDATA)>
+<!ELEMENT joinedDate (#PCDATA)>
+<!ELEMENT interests ( interest* )>  <!-- A member can have none or many interests -->
+<!ELEMENT interest EMPTY>
+<!ATTLIST interest 
+    name ( adults | kids | comic | magazine | art | history | science | scifi | politics | nature | business | travel | cooking ) #REQUIRED>
+<!ELEMENT borrowedBooks ( borrowedBook* )>
+<!ELEMENT borrowedBook EMPTY>
+<!ATTLIST borrowedBook 
+    bookId IDREF #REQUIRED
+    librarianId IDREF #REQUIRED
+    borrowDate CDATA #REQUIRED
+    returnedDate CDATA #IMPLIED>  <!-- If not returned, this field would be empty -->
+<!ELEMENT memberStatus EMPTY>
+<!ATTLIST memberStatus 
+    status ( active | cancelled | suspended ) #REQUIRED>   
+<!ELEMENT librarian ( id, librarianFirstName, librarianLastName, workEmail, areaOfExpertise )>
+<!ATTLIST librarian 
+    id ID #REQUIRED>
+<!ELEMENT librarianFirstName (#PCDATA)>
+<!ELEMENT librarianLastName (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT areaOfExpertise (#PCDATA)>
+<!ELEMENT reservation ( id, resMember, resBook, reservationDate, reservationStatus )>  <!-- If a book is currently unavailable, a member can make a reservation -->
+<!ATTLIST reservation 
+    id ID #REQUIRED>
+<!ELEMENT resMember EMPTY>
+<!ATTLIST resMember 
+    memberId IDREF #REQUIRED>
+<!ELEMENT resBook EMPTY>
+<!ATTLIST resBook 
+    bookId IDREF #REQUIRED>
+<!ELEMENT reservationDate (#PCDATA)>
+<!ELEMENT reservationStatus EMPTY>
+<!ATTLIST reservationStatus 
+    status ( available | pending | cancelled ) #REQUIRED>  

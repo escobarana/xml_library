@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://ana-escobar.com/schemas/scenario5_schema.json",
+    "title": "Library members' engagement",
+    "description": "Library member's and the amount of books borrowed in total",
+    "type": "array",
+    "properties": {
+        "fistname":{
+            "description": "Member's name",
+            "type": "string",
+            "pattern": "[a-zA-Z ]+"
+        },
+        "lastname":{
+            "description": "Member's surname",
+            "type": "string",
+            "pattern": "[a-zA-Z ]+"
+        },
+        "status":{
+            "description": "Member's status",
+            "type": "string",
+            "enum": ["active", "cancelled", "suspended"]
+        },
+        "nbBorrowedBooks":{
+            "description": "Amount of books the member has borrowed from the library",
+            "type": "number",
+            "minimum": 0
+        }
+    },
+    "additionalProperties": false,
+    "required": ["firstname", "lastname", "status", "nbBorrowedBooks"]
+}

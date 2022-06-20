@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<lib:library 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="https://www.ana-escobar.com/library/ library.xsd"
+    xmlns:lib="https://www.ana-escobar.com/library/">
+    <!-- xsi:noNamespaceSchemaLocation="library.xsd"> -->
+    <!-- BOOKS -->
+    <lib:book id="b1">
+        <lib:kinds>
+            <lib:kind>comic</lib:kind>
+        </lib:kinds>
+        <lib:title>CSI: crime scene investigation</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a1" />
+        </lib:authors>
+        <lib:editorial>Pocket Books</lib:editorial>
+        <lib:type>consult</lib:type>
+        <lib:isbn>0743444043</lib:isbn>
+        <lib:publicationYear>2001</lib:publicationYear>
+        <lib:abstract>After a room-service waiter stumbles across a killer and a body, Homicide cop Jim Brass summons forensic investigator Gil Grissom and his staff--including Catherine Willows, 
+            Warrick Brown, and Sara Sidle--to help solve the mystery.</lib:abstract>
+        <lib:nbOfCopies>3</lib:nbOfCopies>
+        <lib:availability>3</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b2">
+        <lib:kinds>
+            <lib:kind>history</lib:kind>
+        </lib:kinds>        
+        <lib:title>Guide de la littérature québécoise</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a2"/>
+        </lib:authors>
+        <lib:editorial>Boréal</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>2890522482</lib:isbn>
+        <lib:publicationYear>1988</lib:publicationYear>
+        <lib:nbOfCopies>4</lib:nbOfCopies>
+        <lib:availability>4</lib:availability>
+        <lib:languages>
+            <lib:language lang="french" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b3">
+        <lib:kinds>
+            <lib:kind>politics</lib:kind>
+        </lib:kinds>        
+        <lib:title>Evolution and morality</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a3"/>
+            <lib:bookauthor authorId="a4"/>
+        </lib:authors>
+        <lib:editorial>NYU Press</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0814771228</lib:isbn>
+        <lib:publicationYear>2012</lib:publicationYear>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>2</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b4">
+        <lib:kinds>
+            <lib:kind>adults</lib:kind>
+        </lib:kinds>        
+        <lib:title>The Greatest Love Story Ever Told</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a5" />
+            <lib:bookauthor authorId="a6" />
+        </lib:authors>
+        <lib:editorial>Dutton</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>1101986670</lib:isbn>
+        <lib:publicationYear>2018</lib:publicationYear>
+        <lib:abstract>Megan Mullally and Nick Offerman reveal the full story behind their epic romance—presented in a series of intimate 
+            conversations between the couple, including photos, anecdotes, and the occasional puzzle.</lib:abstract>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>2</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b5">
+        <lib:kinds>
+            <lib:kind>kids</lib:kind>
+        </lib:kinds>        
+        <lib:title>Edith the cat who ate an elm tree</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a7" />
+        </lib:authors>
+        <lib:editorial>Beeler Large Print</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>1574904914</lib:isbn>
+        <lib:publicationYear>2003</lib:publicationYear>
+        <lib:abstract></lib:abstract>
+        <lib:nbOfCopies>4</lib:nbOfCopies>
+        <lib:availability>4</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b6">
+        <lib:kinds>
+            <lib:kind>buisiness</lib:kind>
+        </lib:kinds>        
+        <lib:title>Money talks</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a8" />
+        </lib:authors>
+        <lib:editorial>Peter Pauper Press</lib:editorial>
+        <lib:type>consult</lib:type>
+        <lib:isbn>0880884428</lib:isbn>
+        <lib:publicationYear>1988</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b7">
+        <lib:kinds>
+            <lib:kind>scifi</lib:kind>
+        </lib:kinds>        
+        <lib:title>Harry Potter and the Cursed Child. Parts 1 and 2</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a9" />
+        </lib:authors>
+        <lib:editorial>Little, Brown</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>123456789</lib:isbn>
+        <lib:publicationYear>2016</lib:publicationYear>
+        <lib:abstract>Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the 
+            first official Harry Potter story to be presented on stage.</lib:abstract>
+        <lib:nbOfCopies>5</lib:nbOfCopies>
+        <lib:availability>5</lib:availability>
+        <lib:languages>
+            <lib:language lang="english"/>
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b8">
+        <lib:kinds>
+            <lib:kind>scifi</lib:kind>
+        </lib:kinds>        
+        <lib:title>Harry Potter and the Sorcerer's Stone</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a9" />
+        </lib:authors>
+        <lib:editorial>Scholastic</lib:editorial>
+        <lib:type>consult</lib:type>
+        <lib:isbn>123456789</lib:isbn>
+        <lib:publicationYear>1998</lib:publicationYear>
+        <lib:abstract></lib:abstract>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b9">
+        <lib:kinds>
+            <lib:kind>science</lib:kind>
+        </lib:kinds>        
+        <lib:title>Social science in the crucible</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a10" />
+        </lib:authors>
+        <lib:editorial>Duke University Press</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0822314975</lib:isbn>
+        <lib:publicationYear>1994</lib:publicationYear>
+        <lib:abstract></lib:abstract>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>0</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b10">
+        <lib:kinds>
+            <lib:kind>science</lib:kind>
+        </lib:kinds>        
+        <lib:title>Who said it would be easy?</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a11" />
+        </lib:authors>
+        <lib:editorial>Arcade Pub., Distributed by Little, Brown</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>1559703024</lib:isbn>
+        <lib:publicationYear>1996</lib:publicationYear>
+        <lib:edition>1</lib:edition>
+        <lib:abstract>One woman's life in the political arena</lib:abstract>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>0</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+    
+    <lib:book id="b11">
+        <lib:kinds>
+            <lib:kind>kids</lib:kind>
+        </lib:kinds>        
+        <lib:title>Vive la maternelle</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a12" />
+        </lib:authors>
+        <lib:editorial>Gallimard jeunesse-Giboulées</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>2070615561</lib:isbn>
+        <lib:publicationYear>2008</lib:publicationYear>
+        <lib:abstract>Une collection présentant une thématique touchant la vie familiale, 
+            sociale et psychologique des enfants en veillant à exposer clairement, en 
+            termes simples et sans dénaturer la matière, les concepts et les états d'âme 
+            liés au sujet.</lib:abstract>
+        <lib:nbOfCopies>3</lib:nbOfCopies>
+        <lib:availability>3</lib:availability>
+        <lib:languages>
+            <lib:language lang="french" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b12">
+        <lib:kinds>
+            <lib:kind>adults</lib:kind>
+            <lib:kind>kids</lib:kind>
+        </lib:kinds> 
+        <lib:title>101 Spanish proverbs</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a13" />
+        </lib:authors>
+        <lib:editorial>Passport Books</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0844272272</lib:isbn>
+        <lib:publicationYear>1998</lib:publicationYear>
+        <lib:abstract>Understanding Spanish language and culture through common sayings</lib:abstract>
+        <lib:nbOfCopies>3</lib:nbOfCopies>
+        <lib:availability>3</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+            <lib:language lang="spanish" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b13">
+        <lib:kinds>
+            <lib:kind>adults</lib:kind>
+            <lib:kind>kids</lib:kind>
+        </lib:kinds> 
+        <lib:title>Portugais</lib:title>         
+        <lib:authors>
+            <lib:bookauthor authorId="a14" />
+        </lib:authors>
+        <lib:editorial>Larousse, Hachette Tourisme</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>2012403999</lib:isbn>
+        <lib:publicationYear>2006</lib:publicationYear>
+        <lib:abstract>Le guide de conversation du routard</lib:abstract>
+        <lib:nbOfCopies>3</lib:nbOfCopies>
+        <lib:availability>3</lib:availability>
+        <lib:languages>
+            <lib:language lang="french" />
+            <lib:language lang="portuguese" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b14">        
+        <lib:kinds>
+            <lib:kind>nature</lib:kind>
+        </lib:kinds>        
+        <lib:title>Plants and plant life</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a15" />
+            <lib:bookauthor authorId="a16" />
+        </lib:authors>
+        <lib:editorial>Grolier Educational</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0717295109</lib:isbn>
+        <lib:publicationYear>2001</lib:publicationYear>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>2</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b15">        
+        <lib:kinds>
+            <lib:kind>nature</lib:kind>
+            <lib:kind>magazine</lib:kind>
+            <lib:kind>kids</lib:kind>
+        </lib:kinds> 
+        <lib:title>Grandes migraciones. Las ballenas</lib:title>        
+        <lib:authors>
+            <lib:bookauthor authorId="a17" />
+        </lib:authors>
+        <lib:editorial>National Geographic</lib:editorial>
+        <lib:type>consult</lib:type>
+        <lib:isbn>1426324995</lib:isbn>
+        <lib:publicationYear>2015</lib:publicationYear>
+        <lib:abstract>Introduces sperm whales, including their different body parts, 
+            how they travel in groups, what they eat, and how they care for their young.</lib:abstract>
+        <lib:nbOfCopies>4</lib:nbOfCopies>
+        <lib:availability>4</lib:availability>
+        <lib:languages>
+            <lib:language lang="spanish" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b16">
+        <lib:kinds>
+            <lib:kind>science</lib:kind>
+        </lib:kinds>        
+        <lib:title>Computer technology for textiles and apparel</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a18" />
+        </lib:authors>
+        <lib:editorial>Woodhead Publishing Ltd</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>1845697294</lib:isbn>
+        <lib:publicationYear>2011</lib:publicationYear>
+        <lib:nbOfCopies>2</lib:nbOfCopies>
+        <lib:availability>2</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b17">
+        <lib:kinds>
+            <lib:kind>art</lib:kind>
+        </lib:kinds>        
+        <lib:title>The concise guide to British pottery and porcelain</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a19" />
+        </lib:authors>
+        <lib:editorial>Barrie and Jenkins</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0712636005</lib:isbn>
+        <lib:publicationYear>1990</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b18">
+        <lib:kinds>
+            <lib:kind>cooking</lib:kind>
+        </lib:kinds>        
+        <lib:title>70 imaginative recipes for the busy cook</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a20" />
+        </lib:authors>
+        <lib:editorial>Dealerfield</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>1859270689</lib:isbn>
+        <lib:publicationYear>1995</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b19">
+        <lib:kinds>
+            <lib:kind>nature</lib:kind>
+        </lib:kinds>        
+        <lib:title>Mammals</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a21" />
+        </lib:authors>
+        <lib:editorial>Facts on File</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0816019606</lib:isbn>
+        <lib:publicationYear>1988</lib:publicationYear>
+        <lib:abstract>Introduces mammals which live and feed on the plains and savannahs, 
+            such as gazelles, tapirs, and kangaroos.</lib:abstract>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b20">
+        <lib:kinds>
+            <lib:kind>nature</lib:kind>
+        </lib:kinds>        
+        <lib:title>Tiger</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a21" />
+        </lib:authors>
+        <lib:editorial>Silver Burdett</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0382094441</lib:isbn>
+        <lib:publicationYear>1987</lib:publicationYear>
+        <lib:abstract>Describes a year in the life of a female Indian tiger who lives on the edge of a forest.</lib:abstract>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b21">
+        <lib:kinds>
+            <lib:kind>science</lib:kind>
+        </lib:kinds>        
+        <lib:title>Fossils</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a21" />
+        </lib:authors>
+        <lib:editorial>Cherrytree</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0745150357</lib:isbn>
+        <lib:publicationYear>1989</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b22">
+        <lib:kinds>
+            <lib:kind>nature</lib:kind>
+        </lib:kinds>        
+        <lib:title>Chimpanzee</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a21" />
+        </lib:authors>
+        <lib:editorial>Silver Burdett Press</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>0382095197</lib:isbn>
+        <lib:publicationYear>1988</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <lib:book id="b23">
+        <lib:kinds>
+            <lib:kind>travel</lib:kind>
+        </lib:kinds>        
+        <lib:title>Main travelled roads</lib:title>
+        <lib:authors>
+            <lib:bookauthor authorId="a22" />
+        </lib:authors>
+        <lib:editorial>Harper</lib:editorial>
+        <lib:type>all</lib:type>
+        <lib:isbn>123456789</lib:isbn>
+        <lib:publicationYear>1899</lib:publicationYear>
+        <lib:nbOfCopies>1</lib:nbOfCopies>
+        <lib:availability>1</lib:availability>
+        <lib:languages>
+            <lib:language lang="english" />
+        </lib:languages>
+    </lib:book>
+
+    <!-- AUTHORS -->
+    <lib:author id="a1">
+        <lib:authorFirstName>Max Allan</lib:authorFirstName>
+        <lib:authorLastName>Collins</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a2">
+        <lib:authorFirstName>Marcel</lib:authorFirstName>
+        <lib:authorLastName>Fortin</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a3">
+        <lib:authorFirstName>James E</lib:authorFirstName>
+        <lib:authorLastName>Fleming</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a4">
+        <lib:authorFirstName>Sanford</lib:authorFirstName>
+        <lib:authorLastName>Levinson</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a5">
+        <lib:authorFirstName>Nick</lib:authorFirstName>
+        <lib:authorLastName>Offerman</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a6">
+        <lib:authorFirstName>Megan</lib:authorFirstName>
+        <lib:authorLastName>Mullally</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a7">
+        <lib:authorFirstName>Rosamond</lib:authorFirstName>
+        <lib:authorLastName>McPherson Young</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a8">
+        <lib:authorFirstName>Susan</lib:authorFirstName>
+        <lib:authorLastName>Teltser Schwarz</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a9">
+        <lib:authorFirstName>Joanne</lib:authorFirstName>
+        <lib:authorLastName>Rowling</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a10">
+        <lib:authorFirstName>Mark C</lib:authorFirstName>
+        <lib:authorLastName>Smith</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a11">
+        <lib:authorFirstName>Elizabeth</lib:authorFirstName>
+        <lib:authorLastName>Holtzman</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a12">
+        <lib:authorFirstName>Catherine</lib:authorFirstName>
+        <lib:authorLastName>Dolto Tolitch</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a13">
+        <lib:authorFirstName>Eduardo</lib:authorFirstName>
+        <lib:authorLastName>Aparicio</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a14">
+        <lib:authorFirstName>Larousse</lib:authorFirstName>
+        <lib:authorLastName>Hachete</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a15">
+        <lib:authorFirstName>Jill</lib:authorFirstName>
+        <lib:authorLastName>Bailey</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a16">
+        <lib:authorFirstName>Grolier</lib:authorFirstName>
+        <lib:authorLastName>Educational</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a17">
+        <lib:authorFirstName>National</lib:authorFirstName>
+        <lib:authorLastName>Geographic</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a18">
+        <lib:authorFirstName>Jinlian</lib:authorFirstName>
+        <lib:authorLastName>Hu</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a19">
+        <lib:authorFirstName>Godden</lib:authorFirstName>
+        <lib:authorLastName>Geoffrey</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a20">
+        <lib:authorFirstName>Valerie</lib:authorFirstName>
+        <lib:authorLastName>Eames</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a21">
+        <lib:authorFirstName>John</lib:authorFirstName>
+        <lib:authorLastName>Stidworthy</lib:authorLastName>
+    </lib:author>
+
+    <lib:author id="a22">
+        <lib:authorFirstName>Hamlind</lib:authorFirstName>
+        <lib:authorLastName>Garland</lib:authorLastName>
+    </lib:author>
+
+    <!-- MEMBERS -->
+    <lib:member id="m1">
+        <lib:memberFirstName>Ana</lib:memberFirstName>
+        <lib:memberLastName>Escobar</lib:memberLastName>
+        <lib:birthDate>1999-03-12</lib:birthDate>
+        <lib:email>ana.escobar-llamazares@edu.dsti.institute</lib:email>
+        <lib:address>
+            <lib:street>Southgate North</lib:street>
+            <lib:number>7</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+        </lib:address>
+        <lib:joinedDate>2010-05-31</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>science</lib:interest>
+            <lib:interest>scifi</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b3" 
+                librarianId="l1" 
+                borrowDate="2010-05-31"
+                returnedDate="2010-02-06" />
+            <lib:borrowedBook 
+                bookId="b2" 
+                librarianId="l1" 
+                borrowDate="2013-06-05" 
+                returnedDate="2013-06-15"/>
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m2">
+        <lib:memberFirstName>Marcos</lib:memberFirstName>
+        <lib:memberLastName>Briggs</lib:memberLastName>
+        <lib:birthDate>1996-04-09</lib:birthDate>
+        <lib:email>m.briggs@gmail.com</lib:email>
+        <lib:address>
+            <lib:street>Crossfield Celyn</lib:street>
+            <lib:number>67</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+            <lib:additionalInformation>First floor</lib:additionalInformation>
+        </lib:address>
+        <lib:joinedDate>2013-03-03</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>history</lib:interest>
+            <lib:interest>buisiness</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b2" 
+                librarianId="l1" 
+                borrowDate="2013-05-06" 
+                returnedDate="2013-15-06"/>
+            <lib:borrowedBook 
+                bookId="b4" 
+                librarianId="l2" 
+                borrowDate="2022-04-15"
+                returnedDate="2022-05-01"/>
+        </lib:borrowedBooks>
+        <lib:memberStatus>cancelled</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m3">
+        <lib:memberFirstName>Josie</lib:memberFirstName>
+        <lib:memberLastName>Howard</lib:memberLastName>
+        <lib:birthDate>1997-02-01</lib:birthDate>
+        <lib:email>j.howard@yahoo.fr</lib:email>
+        <lib:address>
+            <lib:street>Turnberry Paddock</lib:street>
+            <lib:number>23</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+        </lib:address>
+        <lib:joinedDate>2010-12-20</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>nature</lib:interest>
+            <lib:interest>scifi</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b3" 
+                librarianId="l2" 
+                borrowDate="2011-06-05"
+                returnedDate="2011-09-05" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>cancelled</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m4">
+        <lib:memberFirstName>Hollie</lib:memberFirstName>
+        <lib:memberLastName>Donnelly</lib:memberLastName>
+        <lib:birthDate>1998-11-23</lib:birthDate>
+        <lib:email>h.donnelly@hotmail.fr</lib:email>
+        <lib:address>
+            <lib:street>Stevenson Copse</lib:street>
+            <lib:number>1</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+        </lib:address>
+        <lib:joinedDate>2009-01-10</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>science</lib:interest>
+            <lib:interest>scifi</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b9" 
+                librarianId="l1" 
+                borrowDate="2019-01-20" 
+                returnedDate="2019-02-10"/>
+            <lib:borrowedBook 
+                bookId="b9" 
+                librarianId="l3" 
+                borrowDate="2022-05-30" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m5">
+        <lib:memberFirstName>India</lib:memberFirstName>
+        <lib:memberLastName>Grant</lib:memberLastName>
+        <lib:birthDate>2001-06-12</lib:birthDate>
+        <lib:email>i.grant@hotmail.com</lib:email>
+        <lib:address>
+            <lib:street>Lyon Alley</lib:street>
+            <lib:number>78</lib:number>
+            <lib:zipcode>06160</lib:zipcode>
+            <lib:city>Juan Les Pins</lib:city>
+        </lib:address>
+        <lib:joinedDate>2021-02-04</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>buisiness</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b5" 
+                librarianId="l3" 
+                borrowDate="2021-03-04"
+                returnedDate="2021-04-13" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m6">
+        <lib:memberFirstName>Mae</lib:memberFirstName>
+        <lib:memberLastName>Seymour</lib:memberLastName>
+        <lib:birthDate>2000-05-08</lib:birthDate>
+        <lib:email>m.seymour@gmail.com</lib:email>
+        <lib:address>
+            <lib:street>Short Crest</lib:street>
+            <lib:number>98</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+        </lib:address>
+        <lib:joinedDate>2015-04-03</lib:joinedDate>
+        <lib:interests/>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b5" 
+                librarianId="l3" 
+                borrowDate="2015-04-03"
+                returnedDate="2015-04-23" />
+            <lib:borrowedBook 
+                bookId="b17" 
+                librarianId="l2" 
+                borrowDate="2021-05-05"
+                returnedDate="2021-05-23" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m7">
+        <lib:memberFirstName>Meghan</lib:memberFirstName>
+        <lib:memberLastName>Mcdonald</lib:memberLastName>
+        <lib:birthDate>1993-04-13</lib:birthDate>
+        <lib:email>m.mcdonald93@hotmail.fr</lib:email>
+        <lib:address>
+            <lib:street>Yarrow Street</lib:street>
+            <lib:number>12</lib:number>
+            <lib:zipcode>06100</lib:zipcode>
+            <lib:city>Nice</lib:city>
+            <lib:additionalInformation>Fifth floor</lib:additionalInformation>
+        </lib:address>
+        <lib:joinedDate>2017-10-17</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>kids</lib:interest>
+            <lib:interest>magazine</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b7" 
+                librarianId="l2" 
+                borrowDate="2017-10-17"
+                returnedDate="2017-10-27" />
+            <lib:borrowedBook 
+                bookId="b10" 
+                librarianId="l1" 
+                borrowDate="2022-05-27" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m8">
+        <lib:memberFirstName>Theo</lib:memberFirstName>
+        <lib:memberLastName>Padilla</lib:memberLastName>
+        <lib:birthDate>1994-07-15</lib:birthDate>
+        <lib:email>theo.p@yahoo.fr</lib:email>
+        <lib:address>
+            <lib:street>Byker Bank</lib:street>
+            <lib:number>24</lib:number>
+            <lib:zipcode>06000</lib:zipcode>
+            <lib:city>Nice</lib:city>
+        </lib:address>
+        <lib:joinedDate>2020-05-15</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>science</lib:interest>
+            <lib:interest>comic</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b9" 
+                librarianId="l2" 
+                borrowDate="2020-05-15"
+                returnedDate="2020-05-21" />
+            <lib:borrowedBook 
+                bookId="b10" 
+                librarianId="l1" 
+                borrowDate="2022-05-25" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m9">
+        <lib:memberFirstName>Victor</lib:memberFirstName>
+        <lib:memberLastName>Carroll</lib:memberLastName>
+        <lib:birthDate>1987-06-06</lib:birthDate>
+        <lib:email>victor.carroll@gmail.com</lib:email>
+        <lib:address>
+            <lib:street>Parklands Gate</lib:street>
+            <lib:number>19</lib:number>
+            <lib:zipcode>06160</lib:zipcode>
+            <lib:city>Juan Les Pins</lib:city>
+        </lib:address>
+        <lib:joinedDate>2010-04-05</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>science</lib:interest>
+            <lib:interest>cooking</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks>
+            <lib:borrowedBook 
+                bookId="b14" 
+                librarianId="l3" 
+                borrowDate="2011-01-11"
+                returnedDate="2011-01-20" />
+            <lib:borrowedBook 
+                bookId="b18" 
+                librarianId="l3" 
+                borrowDate="2015-06-10"
+                returnedDate="2015-06-20" />
+            <lib:borrowedBook 
+                bookId="b10" 
+                librarianId="l1" 
+                borrowDate="2020-05-21"
+                returnedDate="2020-06-15" />
+            <lib:borrowedBook 
+                bookId="b9" 
+                librarianId="l2" 
+                borrowDate="2022-05-31" />
+        </lib:borrowedBooks>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <lib:member id="m10">
+        <lib:memberFirstName>Bruce</lib:memberFirstName>
+        <lib:memberLastName>Atherton</lib:memberLastName>
+        <lib:birthDate>1970-09-17</lib:birthDate>
+        <lib:email>bruceatherton1970@gmail.com</lib:email>
+        <lib:address>
+            <lib:street>Reid Meadow</lib:street>
+            <lib:number>45</lib:number>
+            <lib:zipcode>06600</lib:zipcode>
+            <lib:city>Antibes</lib:city>
+            <lib:additionalInformation>Ground Floor</lib:additionalInformation>
+        </lib:address>
+        <lib:joinedDate>2020-01-02</lib:joinedDate>
+        <lib:interests>
+            <lib:interest>politics</lib:interest>
+        </lib:interests>
+        <lib:borrowedBooks/>
+        <lib:memberStatus>active</lib:memberStatus>
+    </lib:member>
+
+    <!-- LIBRARIANS -->
+    <lib:librarian id="l1">
+        <lib:librarianFirstName>Ria</lib:librarianFirstName>
+        <lib:librarianLastName>Norris</lib:librarianLastName>
+        <lib:workEmail>r.norris@library.com</lib:workEmail>
+        <lib:areaOfExpertise>History</lib:areaOfExpertise>
+    </lib:librarian>
+
+    <lib:librarian id="l2">
+        <lib:librarianFirstName>Hazel</lib:librarianFirstName>
+        <lib:librarianLastName>Guerrero</lib:librarianLastName>
+        <lib:workEmail>h.guerrero@library.com</lib:workEmail>
+        <lib:areaOfExpertise>Sports</lib:areaOfExpertise>
+    </lib:librarian>
+
+    <lib:librarian id="l3">
+        <lib:librarianFirstName>Vincent</lib:librarianFirstName>
+        <lib:librarianLastName>Wilkes</lib:librarianLastName>
+        <lib:workEmail>v.wilkes@library.com</lib:workEmail>
+        <lib:areaOfExpertise>Literature</lib:areaOfExpertise>
+    </lib:librarian>
+
+    <!-- RESERVATIONS -->
+    <lib:reservation id="r1">
+        <lib:resMember memberId="m2" />
+        <lib:resBook bookId="b4" />
+        <lib:reservationDate>2022-03-01</lib:reservationDate>
+        <lib:reservationStatus>cancelled</lib:reservationStatus>
+    </lib:reservation>
+
+    <lib:reservation id="r2">
+        <lib:resMember memberId="m2" />
+        <lib:resBook bookId="b4" />
+        <lib:reservationDate>2022-04-01</lib:reservationDate>
+        <lib:reservationStatus>confirmed</lib:reservationStatus>
+    </lib:reservation>
+
+    <lib:reservation id="r3">
+        <lib:resMember memberId="m1" />
+        <lib:resBook bookId="b9" />
+        <lib:reservationDate>2022-06-01</lib:reservationDate>
+        <lib:reservationStatus>pending</lib:reservationStatus>
+    </lib:reservation>
+
+    <lib:reservation id="r4">
+        <lib:resMember memberId="m3" />
+        <lib:resBook bookId="b10" />
+        <lib:reservationDate>2022-06-03</lib:reservationDate>
+        <lib:reservationStatus>pending</lib:reservationStatus>
+    </lib:reservation>
+    
+</lib:library>
